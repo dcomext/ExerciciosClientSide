@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/formulario2.css">
+    <title>Formulário 2</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+
+            <h2>Informações Pessoais</h2>
+            <div class="input-field">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="input-field">
+                <label for="E-mail">E-mail:</label>
+                <input type="email" name="E-mail" id="E-mail">
+            </div>
+
+            <div class="input-field">
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div class="input-field">
+                <label for="login">Login:</label>
+                <input type="text" name="login" id="login">
+            </div>
+
+            <div class="input-field">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+            <div class="input-field">
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <option value="MG">MG</option>
+                    <option value="SP">SP</option>
+                    <option value="CE">CE</option>
+                </select>
+            </div>
+
+            <div class="input-field">
+                <span>Faixa Etária</span>
+                <label for="menor">
+                    <input type="radio" name="faixa-etaria" id="menor">Menor ou igual a 18 anos
+                </label>
+
+                <label for="maior">
+                    <input type="radio" name="faixa-etaria" id="maior">Maior de 18 anos
+                </label>
+            </div>
+            <div class="btn-field">
+                <button>Etetuar Cadastro</button>
+                <button type="reset">Limpar Formulário</button>
+            </div>
+        </fieldset>
+
+
+    </form>
+
+</body>
+
+</html>
