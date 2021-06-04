@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        notaA = parseFloat(prompt('Digite sua nota: '));
+        notaB = parseFloat(prompt('Digite sua nota: '));
+        notaC = parseFloat(prompt('Digite sua nota: '));
+        media = (notaA + notaB + notaC)/3;
+
+        console.log(notaA);
+        console.log(notaB);
+        console.log(notaC);
+        console.log(media);
+
+        if (media <= 40) {
+            alert(`Sua media ${media}, Você está reprovado`);
+        }
+        else if ((media > 40) && (media <= 60)) {
+            alert(`Sua media ${media}, Você está em recuperação`);
+        }
+
+        else if (media > 60) {
+            alert(`Sua media ${media}, Você está aprovado`);
+}
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--1-Cada espectador de um cinema respondeu a um questionário no qual 
+constava sua idade e a sua opinião em relação ao filme: ótimo - 3, bom - 2, 
+regular -1. Faça um programa que receba a idade e a opinião de 10 espectadores, 
+calcule e imprima:
+a média das idades das pessoas que responderam ótimo;
+a quantidade de pessoas que responderam regular;
+a porcentagem de pessoas que responderam bom entre todos os espectadores analisados.-->
+
+    <script>
+        
+        var x = 1; op = 0, idade = 0, somaIdade = 0, contPessoasRegular=0, contPessoasOtimo=0;
+        mediaIdade=0, percentual=0, contGeral=0, contPessoasBom=0;
+        while (x <= 4) {
+
+            idade = parseInt(prompt("Coloque a sua idade"));
+            op = parseInt(prompt("Coloque a sua opinião 3-ótimo 2-bom 1-regular"));
+
+            if (op === 3) {
+                somaIdade = somaIdade + idade;
+                contPessoasOtimo++;
+            }
+            else if (op===1){
+                contPessoasRegular++;
+            }
+            else if (op===2){
+                contPessoasBom++;
+            }
+
+            x++;
+            contGeral++;
+
+        }
+
+            mediaIdade= somaIdade/contPessoasOtimo;
+            percentual=((contPessoasBom/contGeral)*100);
+            document.write("A média das idades é: "+mediaIdade+"<br>");
+            document.write("O percentual de bom: "+percentual+"<br>");
+            document.write("A quantidade de regular é: "+contPessoasRegular+"<br>");
+    
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--1-Cada espectador de um cinema respondeu a um questionário no qual 
+constava sua idade e a sua opinião em relação ao filme: ótimo - 3, bom - 2, 
+regular -1. Faça um programa que receba a idade e a opinião de 10 espectadores, 
+calcule e imprima:
+a média das idades das pessoas que responderam ótimo;
+a quantidade de pessoas que responderam regular;
+a porcentagem de pessoas que responderam bom entre todos os espectadores analisados.-->
+
+    <script>
+        function question1(){
+
+
+        var x = 1; op = 0, idade = 0, somaIdade = 0, contPessoasRegular=0, contPessoasOtimo=0;
+        mediaIdade=0, percentual=0, contGeral=0, contPessoasBom=0;
+        while (x <= 4) {
+
+            idade = parseInt(prompt("Coloque a sua idade"));
+            op = parseInt(prompt("Coloque a sua opinião 3-ótimo 2-bom 1-regular"));
+
+            if (op === 3) {
+                somaIdade = somaIdade + idade;
+                contPessoasOtimo++;
+            }
+            else if (op===1){
+                contPessoasRegular++;
+            }
+            else if (op===2){
+                contPessoasBom++;
+            }
+
+            x++;
+            contGeral++;
+
+        }
+
+            mediaIdade= somaIdade/contPessoasOtimo;
+            percentual=((contPessoasBom/contGeral)*100);
+            document.write("A média das idades é: "+mediaIdade+"<br>");
+            document.write("O percentual de bom: "+percentual+"<br>");
+            document.write("A quantidade de regular é: "+contPessoasRegular+"<br>");
+    
+        }
+
+        questao1()

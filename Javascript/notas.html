@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+//Retornar a média de notas de uma sala com 5 alunos//
+    x=1; // condição inicial do while
+    somanotas=0 // inicialização da variável que terá o somatório
+    while(x<=5){ // laço while com a proposição
+notas=parseFloat(prompt("Digite a nota do aluno enquanto"+x)) // Entrada de dados pelo usuario,
+//onde a mesma está recebendo uma conversão para float através da função interna, parsefloat
+
+somanotas=somatonas+notas; // somatorio das notas
+x++; //incremento para condição de parada
+}
+media=somanotas/5; //calculo da media
+
+alert("A media da turma e: "+media); //Saída cria a caixa do navegador
+console.log(media); // Cria Saída no console do navegador
+document.write(media); // Saída no próprio navegador
+
+//USANDO AGORA O LAÇO DE REPETIÇÃO FOR PARA COMPARAR COM O WHILE
+somanotasfor=0; //inicialização da variável para o somatorio;
+for(i=1;i<=5;i++) // laço for, com condição inicial, proposição e incremento
+//para condição de parada
+{
+notasfor= parseFloat(prompt("Digite a nota do aluno laço para"+i)) // entrada de dados 
+somanotasfor=somanotasfor+notasfor; //somatorio
+
+}
+
+mediafor=somanotasfor/5; //calculo da mediafor
+
+alert("A media da turma e: "+mediafor); //Saída cria a caixa do navegador
+console.log(mediafor); // Cria Saída no console do navegador
+document.write(mediafor); // Saída no próprio navegador
+
+
+</script>
+
+</body>
+</html>

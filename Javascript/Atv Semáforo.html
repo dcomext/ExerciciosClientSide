@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--Validar os semáforos para usuários com deficiência visual, informando para cada status
+    recebido uma mensagem.
+    
+    Verde, pode atravessar
+    Amarelo, atenção
+    Vermelho, não pode atravessar.-->
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>semáforos</title>
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+            /**Validar os semáforos para usuários com deficiência visual, informando para cada status
+            recebido uma mensagem.
+            Verde, pode atravessar
+            Amarelo, atenção
+            Vermelho, não pode atravessar**/
+
+            semaforo = (prompt('qual a cor do semáforo: '));
+            console.log(semaforo);
+
+            if (semaforo == "verde") {
+                alert(`Pode passar`);
+            }
+            else if (semaforo == "amarelo") {
+                alert(`Atenção`);
+            }
+            else if (semaforo == "vermelho") {
+                alert(`Pare`);
+            }
+
+        </script>
+
+
+    </body>
+
+    </html>

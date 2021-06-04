@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles/main.css" />
+  
+  <script defer src="scripts/main.js">//O atributo defer diz ao navegador para executar o script apenas quando a análise do HTML estiver finalizada.</script>
+
+  <title>JS - EventListener</title>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">
+        Aula JS - eventListener / setTimeout / preventDefault
+      </h1>
+      <p class="lead">Exercícios para treinar o uso de Eventos e Timers</p>
+      <hr class="my-2" />
+    </div>
+  </div>
+
+  <div class="d-flex">
+    <div class="col-6 d-flex justify-content-center">
+      <a href="#" class="btn btn-primary btn-lg "  id="exercicio2">Cumprimentar</a>
+    </div>
+    <div class="col-6 d-flex justify-content-center">
+      <a href="#" class="btn btn-primary btn-lg "  id="exercicio3">Alterar Fundo</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-6">
+      <img src="images/joinha.png" alt="Joinha" id="exercicio4" />
+    </div>
+    <div class="col-6">
+      <img src="images/joinha2.png" alt="Joinha" id="exercicio5" />
+    </div>
+  </div>
+  <div class="container">
+    <form class="border" method="post" action="http://www.google.com.br/" id="exercicio8">
+      <div class="form-group">
+        <label for="NomeCompleto">Nome Completo:</label>
+        <input type="text" name="NomeCompleto" id="NomeCompleto" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="3" class="form-control"></textarea>
+      </div>
+      <input type="submit" value="Enviar" />
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/scriptdapag.js"></script>
+    <script src="https: //use.fontawesome.com/e2120a24bd.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <title>Despachante - Jan Quintão</title>
+</head>
+
+<body class="bg-triangules-2" style="opacity" : 1;>
+    <main class="main">
+        <!-- Menu -->
+        <div class="nav-wrap">
+            <ul class="nav">
+                <!--::before-->
+                <li class="nav-item">
+                    <a class="active" href="#">A Empresa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Consulta Multas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Blog</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="wrapper-parent">
+            <!--Sidebar-->
+
+            <aside class="sidebar">
+                <div class="sticky-column">
+
+                    <div class="foto-wrap">
+                        <!--::before-->
+                        <img class="foto foto-180" src="img/logodespachante.png" alt="foto">
+                    </div>
+
+
+                    <div class="text-center">
+                        <h3 class="sidebar_username"> <span style="font-weight:500">Jan </span>Quintão</h3>
+                        <div class="badge badge-gray">Despachante Veicular</div>
+                        <!--Social-->
+                        <div class="social">
+                            <a class="social_link" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="social_link" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="social_link" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <ul class="contact-block">
+                        <li class="contact-block_item" title="Data de Nascimento">
+                            <i class="far fa-calendar-alt"></i>Seg à Sex de 8 às 17hs
+                        </li>
+
+                        <li class="contact-block_item" title="Endereço">
+                            <i class="fas fa-globe-americas"></i>Belo Horizonte
+                        </li>
+
+                        <li class="contact-block_item" title="E-mail">
+                            <a href="mailto:dcomext@gmail.com">
+                                <i class="far fa-envelope"></i>dcomext@gmail.com
+                            </a>
+                        </li>
+
+                        <li class="contact-block_item" title="Telefone">
+                            <i class="fas fa-mobile-alt"></i>+55 31 91234-9999
+                        </li>
+
+                        <li class="contact-block_item" title="Skype">
+                            <a href="#">
+                                <i class="fab fa-skype"></i>Dcomext
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <a class="btn" href="#">
+                        <i class="fa fa-download" aria-hidden="true"></i>E-book Multas
+                    </a>
+
+                </div>
+            </aside>
+
+
+            <!--Content-->
+
+            <div class="content">
+                <!--About-->
+                <div class="section">
+                    <h1 class="title--h1 title__separate">A Empresa</h1>
+
+                </div>
+
+                <div class="about-logo">
+                    <div class="about_text">
+                        <p>A Despachante Quintão é uma empresa especializada há 25 anos
+                            na prestação de serviços e assessoria documentalista junto
+                            ao DETRAN - MG e a órgãos públicos federais, estaduais e
+                            municipais, em Belo Horizonte, região metropolitana e
+                            interior.</p>
+                        <p class="mb-0">Solucionamos o seu problema e enviamos a
+                            documentação com agilidade, segurança e a garantia de
+                            entrega de quem é líder no mercado.</p>
+                    </div>
+
+                    <div class="logo-detranmg">
+                        <img class="logodetran-135" src="img/logodetranmg.jpg" alt="foto">
+                    </div>
+
+                </div>
+                <!--Consulta Multa-->
+                <div class="section">
+
+                    <h2 class="title--h2">Consulta Multa</h2>
+
+                    <form id="multas" class="multas" data-toggle="validator" novalidate="true">
+                        <div class="row">
+                            <div class="input-field">
+                                <label for="velmax">Informe a velocidade máxima permitida</label>
+                                <input type="number" id="velmax">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="velcarro">Informe a velocidade do carro</label>
+                                <input type="number" id="velcarro">
+                            </div>
+                        </div>
+                        <div class="button-field">
+                            <button type="button" class="btn" onclick="calculaInfracao()">Resultado</button>
+                        </div>
+
+                        <div class="button-field">
+                            <button type="button" class="btn" onclick="atribuirpontuacao()">Atribuir Pontuação</button>
+                        </div>
+
+                        <div id="resultadoInfracao"></div>
+
+                        <div id="mudancapontuacao"></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

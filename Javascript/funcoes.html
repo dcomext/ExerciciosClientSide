@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //Funções para somar 2 numeros e retornar o valor somado
+
+        function soma(){  //função sem parametros e sem retorno
+            var num1=2;num2=5;
+            
+            resul=num1+num2;
+            return(resul);
+            
+        }
+
+        alert("O resultado da soma e: "+soma()); // chamando a função para que ela seja executada
+    
+        
+    function somaretorno(x, y){ //função com passagem de 2 parametros
+
+        resul=x+y; //processamento da soma utilizando os parametros
+        //return(x+y);// retorno de forma direta com o processamento
+        return(resul); // retorno do resultado para quem o chamou
+    
+    }
+    z=parseInt(prompt("Digite o valor A")); //Entrada do usuario
+    w=parseInt(prompt("Digite outro valor")); //Entrada do usuario
+
+    alert("O resultado da soma com parametro"+somaretorno(z,w));
+
+    function nonono(texto, vezes){
+        Str='';
+
+        for(i=1;i<=vezes;i++){
+            str=str+texto;
+        }
+        return (str);
+    }
+        ttex=prompt("Digite um texto");
+        qtd=parseInt(prompt("Digite a qtd de vezes a repetir"));
+
+        bacon=nonono("NO", 5);
+        bacon2=nonono(ttex,2);
+
+
+        alert(bacon);
+        document.write(bacon);
+    alert(bacon2);
+    document.write(bacon2);
+
+    </script>
+    
+
+</body>
+</html>

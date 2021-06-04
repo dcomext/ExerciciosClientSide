@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    /*3- Crie uma função em JavaScript que receba as notas de um aluno e calcule a 
+    sua nota final na disciplina. A função pode receber 4 ou 5 argumentos. No primeiro 
+    caso, são as notas de cada um dos bimestres, do 1° ao 4°. O quinto argumento, 
+    se fornecido, indica a nota da recuperação final do aluno. Assim, a sua função 
+    deve fazer a conta para 4 argumentos (para o aluno que não ficou em recuperação) 
+    e para 5 argumentos (para o aluno que ficou em recuperação). DICA: use o
+    exemplo do ppt que trata argumentos opcionais.*/
+    var notafinal=0, somanotas=0;
+    
+nota1=parseFloat(prompt("Digite a nota 1"));
+nota2=parseFloat(prompt("Digite a nota 2"));
+nota3=parseFloat(prompt("Digite a nota 3"));
+nota4=parseFloat(prompt("Digite a nota 4"));
+somanotas=nota1+nota2+nota3+nota4;
+
+if(somanotas>=40 && somanotas<60){
+document.write(`Aluno em recuperação`);
+nota5=parseFloat(prompt("Digite a nota da recuperação"));
+}
+resultado= calculanota(nota1,nota2,nota3,nota4,nota5);
+
+function calculanota(n1,n2,n3,n4,n5=0){
+        notafinal=(n1+n2+n3+n4+n5);
+        return(notafinal);
+    }
+document.write(`Resultado final do aluno ${resultado}`);
+
+    </script>
+
+</body>
+</html>
+
+

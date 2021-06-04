@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--1-Cada espectador de um cinema respondeu a um questionário no qual 
+constava sua idade e a sua opinião em relação ao filme: ótimo - 3, bom - 2, 
+regular -1. Faça um programa que receba a idade e a opinião de 10 espectadores, 
+calcule e imprima:
+a média das idades das pessoas que responderam ótimo;
+a quantidade de pessoas que responderam regular;
+a porcentagem de pessoas que responderam bom entre todos os espectadores analisados.-->
+
+    <script>
+
+        var qtdPessoasRegular = 0;
+        var otimo = 0;
+        var bom = 0;
+        var soma = 0;
+        for (var i = 0; i < 10; i++) {
+
+            var idade = parseInt(prompt("Coloque a sua idade"));
+            var pontuacao = parseInt(prompt("Coloque a sua pontuacao"));
+
+            switch (pontuacao) {
+
+                case 3:
+                    soma = soma + idade;
+                    break;
+
+                case 1:
+                    /*qtdPessoasRegular++*/
+                    qtdPessoasRegular = qtdPessoasRegular + 1;
+                    break;
+
+                case 2:
+                    bom++;
+                    break;
+
+                default:
+                    alert("Opcão inválida. Digite 1 ou 2 ou 3");
+                    break;
+            }
+        }
+        alert(`média idades ótimo ${mediaOtimo(soma, i)}`);
+        alert(`quantidade regular ${quantidadeRegular(quantidade)}`);
+        alert(`pocentagem bom ${porcentagemBom(bom)}`);
+
+        function mediaOtimo(somaIdade, divisor) {
+            var media = somaIdade / divisor;
+            return media;
+        }
+        function quantidadeRegular(quantidade) {
+            return quantidade;
+        }
+        function porcentagemBom(quantidadeBom) {
+            return (quantidadeBom / i) * 100;
+        }
+    </script>
+
+</body>
+
+</html>

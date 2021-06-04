@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <form action="">
+        <div class="input-field">
+            <label for="numero1">Número 1</label>
+            <input type="number" id="numero1">
+        </div>
+
+        <div class="input-field">
+            <label for="numero2">Número 2</label>
+            <input type="number" id="numero2">
+        </div>
+
+        <div class="input-field">
+            <label for="resultado">Resultado</label>
+            <input type="number" id="resultado" readonly>
+        </div>
+
+        <div class="button-field">
+            <button type="submit" onclick="realizarSoma()">Somar</button>
+            <button type="submit" onclick="realizarSubtracao()">Subtrair</button>
+            <button type="submit" onclick="realizarMultiplicacao()">Multiplica</button>
+            <button type="submit" onclick="realizarDivisao()">Dividir</button>
+        </div>
+
+        <div id="resultado-p"></div>
+        
+    </form>
+
+    <script>
+        /*1. Escreva um programa para receber 2 números. Exiba:
+        – sua subtração
+        – sua multiplicação
+        – sua divisão
+        – a média entre eles*/
+
+        let inputNumero1 = document.querySelector("#numero1");
+        let inputNumero2 = document.querySelector("#numero2");
+        let inputResultado = document.querySelector("#resultado");
+        let pResultado = document.querySelector("#resultado-p");
+        console.log(pResultado);
+
+        function realizarSoma() {
+            
+            event.preventDefault();
+            let numero1 = parseFloat(inputNumero1.value);
+            let numero2 = parseFloat(inputNumero2.value);
+            inputResultado.value = numero1 + numero2;
+            console.log(inputResultado.value);
+            pResultado.innerHTML += `<p>O resultado da soma é: ${inputResultado.value}</p>`;
+        }
+        
+
+        function realizarSubtracao() {
+            event.preventDefault();
+            let numero1 = parseFloat(inputNumero1.value);
+            let numero2 = parseFloat(inputNumero2.value);
+            inputResultado.value = numero1 - numero2;
+            console.log(inputResultado.value);
+        }
+
+        function realizarMultiplicacao() {
+            event.preventDefault();            
+            let numero1 = parseFloat(inputNumero1.value);
+            let numero2 = parseFloat(inputNumero2.value);
+            inputResultado.value = numero1 * numero2;
+            console.log(inputResultado.value);
+        }
+
+        function realizarDivisao() {
+            event.preventDefault();
+            let numero1 = parseFloat(inputNumero1.value);
+            let numero2 = parseFloat(inputNumero2.value);
+            inputResultado.value = numero1 / numero2;
+            console.log(inputResultado.value);
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

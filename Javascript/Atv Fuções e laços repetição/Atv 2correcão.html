@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+/*2- Faça um programa que receba 10 números, calcule e imprima a soma dos 
+números pares e a multiplicação dos números ímpares.*/
+var num=0, somap=0, somap=0, multi=1;
+
+i=0;
+while(i<=4){
+valor=parseInt(prompt("Informe o valor"));
+par=somapares(valor);
+impar=multiimpar(valor);
+i++;
+}
+
+function somapares(num){
+    if(num%2===0){
+        somap=somap+num;
+    }
+}
+return(somap);
+
+function multiimpar(num){
+    if(num%2!==0){
+        multi=multi*num;
+    }
+}
+    return(multi);
+
+
+
+document.write(`A soma dos valores pares é ${par} <br>`);
+document.write(`A soma dos valores pares é ${impar} <br>`);
+
+</script>

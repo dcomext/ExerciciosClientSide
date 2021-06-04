@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        altura = parseFloat(prompt('Digite sua altura: '));
+
+        peso = parseFloat(prompt('Digite seu peso: '));
+
+        console.log(peso);
+        console.log(altura);
+        imc = (peso / (altura * altura));
+        console.log(imc);
+
+        if (imc <= 18.5) {
+            alert(`Seu imc ${imc}, Você está abaixo do peso`);
+        }
+        else if ((imc > 18.5) && (imc <= 25)) {
+            alert(`Seu imc ${imc}, Você está com peso normal`);
+        }
+        else if ((imc > 25) && (imc <= 30)) {
+            alert(`Seu imc ${imc}, Você está Acima do peso`);
+        }
+        else if (imc > 30) {
+            alert(`Seu imc ${imc}, Você está obeso`);
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        var num1 = parseFloat(prompt("Informe o primeiro numero: "));
+        var num2 = parseFloat(prompt("Informe o segundo numero: "));
+        var opcao = parseFloat(prompt("Informe a opção: 1 para somar, 2 para subtrair, 3 para multiplicar ou 4 para dividir"));
+
+        switch (opcao) {
+
+            case 1:
+                resul = (num1 + num2);
+                alert(`A soma do numeros é:  ` + resul);
+                break;
+
+            case 2:
+                result = (num1 - num2);
+                alert(`A subtracao dos números é: ` + result);
+                break;
+
+            case 3:
+                resulta = (num1 * num2);
+                alert(`A multiplicação dos números é: ` + resulta);
+                break;
+
+            case 4:
+                resultad = (num1 / num2);
+                alert(`A divisão dos números é: ` + resultad);
+                break;
+
+            default:
+                alert(`Opção Inválida`);
+        }
+
+    </script>
+
+</body>
+
+</html>

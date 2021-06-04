@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1-Faça um script que entre com o nome e o salário de um 
+        //funcionário e mostre seu novo salário,sabendo que o mesmo 
+        //teve um aumento de 10%.
+
+        nome = prompt("Digite o seu nome: ");
+        salbase = parseFloat(prompt("Digite seu salario: "));
+        percaumento = 0.10;
+        parcelaaumento = (salbase * percaumento);
+        novosalario = (salbase + parcelaaumento);
+console.log(salbase);
+console.log(percaumento);
+console.log(parcelaaumento);
+
+        alert(
+            `Sr(a) ${nome}, seu novo salario com aumento de 
+            10% será: ${novosalario}`)
+
+    </script>
+</body>
+
+</html>

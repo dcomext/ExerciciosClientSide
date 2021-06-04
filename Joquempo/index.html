@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joquempo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+    <div class="introducao">
+        <h1>Pedra, papel e tesoura!</h1>
+    </div>
+    <div class="container">
+        <div class="container2">
+            <h2 class="voce">Você</h2>
+            <div class="score" >
+                <span id="jogadorpontoss">0</span>
+            </div>
+            <span class="estilo1">Escolha sua arma:</span>
+            <div class="armas">
+                <div class="flex" id="jogadorr">
+                    <img src="img/pedra.png" alt="pedra" id="pedra" onclick="joquempo(1)">
+                    <img src="img/papel.png" alt="papel" id="papel" onclick="joquempo(2)">
+                    <img src="img/tesoura.png" alt="tesoura" id="tesoura" onclick="joquempo(3)">
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <h2 class="voce">Computador</h2>
+            <div class="score2" >
+                <span id="computadorpontoss">0</span>
+            </div>
+            <div class="armas">
+                <div class="flex" id="computadorr">
+                    <img src="img/pedra.png" alt="pedra" id="pedrapc">
+                    <img src="img/papel.png" alt="papel" id="papelpc">
+                    <img src="img/tesoura.png" alt="tesoura" id="tesourapc">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resultado" id="resultado">
+        Clique para jogar
+    </div>
+</body>
+
+</html>
