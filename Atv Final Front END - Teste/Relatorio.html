@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/CSS-relatorio.css">
+</head>
+<body>
+    <header>
+		<div class="container">
+			<h1>Relação de Pedidos</h1>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h2>Pedidos</h2>
+			<label for="filtrar-tabela">Filtre:</label>
+			<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
+			<table>
+				<thead>
+					<tr>
+                        <th>Nome</th>
+						<th>Código</th>
+						<th>Quantidade</th>
+						<th>Preço</th>
+						<th>Cliente</th>
+                        <th>Vendedor</th>
+                        <th>Data</th>
+                        <th>Observações</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-pedidos">
+
+					<tr class="pedidos">
+						<td class="info-nome">Abacaxi</td>
+						<td class="info-codigo">Fred</td>
+						<td class="info-quantidade">50</td>
+						<td class="info-preco">10</td>
+						<td class="info-Cliente">Supermecados BH</td>
+                        <td class="info-vendedor">Giovani</td>
+                        <td class="info-data"></td>
+                        <td class="info-observações">Entregar antes das 9hs</td>
+					</tr>
+
+					<tr class="pedidos">
+						<td class="info-nome">Melancia</td>
+						<td class="info-codigo">Flor</td>
+						<td class="info-quantidade">200</td>
+						<td class="info-preco">10</td>
+						<td class="info-Cliente">Super Nosso</td>
+                        <td class="info-vendedor">Carlos</td>
+                        <td class="info-data"></td>
+                        <td class="info-observações">Receber 50%</td>
+					</tr>
+
+					<tr class="pedidos">
+						<td class="info-nome">Coco</td>
+						<td class="info-codigo">Docin</td>
+						<td class="info-quantidade">1000</td>
+						<td class="info-preco">15</td>
+						<td class="info-Cliente">Carrefour</td>
+                        <td class="info-vendedor">Carlos</td>
+                        <td class="info-data"></td>
+                        <td class="info-observações">Coco sem cortes</td>
+					</tr>
+					</tbody>
+			</table>
+				</section>
+	</main>
+
+</body>
+</html>
