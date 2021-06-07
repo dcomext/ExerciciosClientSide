@@ -1,7 +1,8 @@
 table{
 	width: 100%;
-	margin-bottom : .5em;
+	margin : 2rem 0;
     table-layout: fixed;
+    display: table !important;
 
 }
 

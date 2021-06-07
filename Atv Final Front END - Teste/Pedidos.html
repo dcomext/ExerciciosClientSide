@@ -11,10 +11,12 @@ input - img - atributos dos itens --->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
   <meta name="HandheldFriendly" content="true" />
   <title>Pedidos</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link type="text/css" rel="stylesheet"
     href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f7ed99c2c2c7240ba580251" />
   <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.25660" />
   <link rel="stylesheet" href="css/styles/CSS-enxuto.css">
+  <link rel="stylesheet" href="css/CSS-relatorio.css">
 
 </head>
 
@@ -542,16 +544,13 @@ input - img - atributos dos itens --->
           <li class="form-line" data-type="control_button" id="id_2">
             <div id="cid_2" class="form-input-wide" data-layout="full">
               <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
-                <span>
-                   
-                </span>
-                <button id="btnimprimir" type="button" class="form-submit-print jf-form-buttons"
+                <!-- <button id="btnimprimir" type="button" class="form-submit-print jf-form-buttons"
                   data-component="button">
                   <img src="https://cdn.jotfor.ms/images/printer.png" style="vertical-align:middle" />
                   <span id="spanbtnimprimir" class="span_print">
                     Imprimir
                   </span>
-                </button>
+                </button> -->
                 <button id="btngerar_pedido" type="submit"
                   class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button"
                   data-content="">
@@ -576,6 +575,57 @@ input - img - atributos dos itens --->
       <input type="hidden" id="input_35" name="q35_numeroPedido" class="form-textbox form-hidden" value="6"
         data-component="autoincrement" />
     </form>
+  </div>
+  <div class="table container">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Código</th>
+          <th>Quantidade</th>
+          <th>Preço</th>
+          <th>Cliente</th>
+          <th>Vendedor</th>
+          <th>Data</th>
+          <th>Observações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-pedidos">
+
+        <tr class="pedidos">
+          <td class="info-nome">Abacaxi</td>
+          <td class="info-codigo">Fred</td>
+          <td class="info-quantidade">50</td>
+          <td class="info-preco">10</td>
+          <td class="info-Cliente">Supermecados BH</td>
+          <td class="info-vendedor">Giovani</td>
+          <td class="info-data"></td>
+          <td class="info-observações">Entregar antes das 9hs</td>
+        </tr>
+
+        <tr class="pedidos">
+          <td class="info-nome">Melancia</td>
+          <td class="info-codigo">Flor</td>
+          <td class="info-quantidade">200</td>
+          <td class="info-preco">10</td>
+          <td class="info-Cliente">Super Nosso</td>
+          <td class="info-vendedor">Carlos</td>
+          <td class="info-data"></td>
+          <td class="info-observações">Receber 50%</td>
+        </tr>
+
+        <tr class="pedidos">
+          <td class="info-nome">Coco</td>
+          <td class="info-codigo">Docin</td>
+          <td class="info-quantidade">1000</td>
+          <td class="info-preco">15</td>
+          <td class="info-Cliente">Carrefour</td>
+          <td class="info-vendedor">Carlos</td>
+          <td class="info-data"></td>
+          <td class="info-observações">Coco sem cortes</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <script src="js/script.js"></script>
 </body>

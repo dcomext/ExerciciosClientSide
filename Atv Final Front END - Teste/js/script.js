@@ -38,14 +38,39 @@ window.addEventListener("load", () => {
 function handlerGerarPedido() {
     btnGerarPedido.addEventListener("click", (event) => {
         event.preventDefault()
-
         geraArrayFrutas();
-        geraObjetoVenda();
-        console.log(geraObjetoVenda())
-
+        let pedido = geraObjetoVenda();
+        adicionaPedidoNaTabela(pedido);
     });
+}
 
+function adicionaPedidoNaTabela(pedido) {
+    var pedidoTr = montarTr(pedido)
+    var tabela = document.querySelector("#tabela-pedidos");
+    tabela.appendChild(pedidoTr);
+}
+function montarTr(pedido) {
+    for (let i = 0; i < pedido.frutas.length; i++) {
+        var pedidoTr = document.createElement("tr");
+        pedidoTr.classList.add("pedidos");
 
+        pedidoTr.appendChild(montaTd(pedido.frutas[i].nome, "info-nome"));
+        pedidoTr.appendChild(montaTd(pedido.frutas[i].codigo, "info-codigo"));
+        pedidoTr.appendChild(montaTd(pedido.frutas[i].quantidade, "info-quantidade"));
+        pedidoTr.appendChild(montaTd(pedido.frutas[i].preco, "info-preco"));
+        pedidoTr.appendChild(montaTd(pedido.cliente, "info-Cliente"));
+        pedidoTr.appendChild(montaTd(pedido.vendedor, "info-vendedor"));
+        pedidoTr.appendChild(montaTd(pedido.dataVenda, "info-data"));
+        pedidoTr.appendChild(montaTd(pedido.observacoes, "info-observacoes"));
+    }
+
+    return pedidoTr
+}
+function montaTd(data, classe) {
+    var td = document.createElement("td");
+    td.textContent = data;
+    td.classList.add(classe);
+    return td;
 }
 
 //Funcao inicializa dados de entrada
@@ -131,7 +156,7 @@ function geraArrayFrutas() {
 
 function geraObjetoVenda() {
     const venda = {
-        frutas: frutasList,
+        frutas: frutasList.filter(frutas => frutas.isChecked),
         dataVenda: dataVenda.value,
         horaVenda: horaVenda.value,
         vendedor: Vendedor.value,
